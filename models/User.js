@@ -63,9 +63,10 @@ User.prototype.login = function() {
       }
     }).catch(function() {
       reject("Please try again later.")
-    });
+    })
   })
 };
+
 User.prototype.register = function() {
 	//  Validate user data
 	this.cleanUp();
