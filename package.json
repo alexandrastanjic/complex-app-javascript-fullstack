@@ -41,6 +41,7 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
     "css-loader": "^5.2.6",
-    "style-loader": "^2.0.0"
+    "style-loader": "^2.0.0",
+    "ws": "3.3.2"
   }
 }
