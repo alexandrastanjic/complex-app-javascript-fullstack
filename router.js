@@ -4,9 +4,12 @@ const userController = require('./controllers/userController');
 const postController = require('./controllers/postController')
 
 router.get('/', userController.home);
-router.post('/register', userController.register);
+router.post('/register', userController.register); 
 router.post('/login', userController.login);
 router.post('/logout', userController.logout);
+
+// profile related routes
+router.get('/profile/:username', userController.ifUserExists, userController.profilePostsScreen)
 
 // post realated routes
 router.get('/create-post', userController.mustBeLoggedIn, postController.viewCreateScreen);
